@@ -1,0 +1,303 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.logo {
+    margin-top: -1rem;
+    height: 60px;
+    width: 160px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.custom-orange {
+    color: #FC7F03;
+}
+
+.bg-custom-orange {
+    background-color: #FC7F03;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.review-scroll {
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Font Styles */
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+/* Styling for Address and Contact Sections */
+.address-section,
+.contact-section {
+    margin-bottom: 20px;
+}
+
+/* Logo Styling */
+.logo-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 2rem;
+}
+
+.social-icon-item a {
+    transition: color 0.3s ease;
+}
+
+.social-icon-item a:hover {
+    color: #598ce6;
+}
+
+.social-icons li a {
+    color: aliceblue;
+}
+
+.social-icons li a:hover {
+    color: #598ce6;
+}
+
+/* Footer Layout Styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-lg-4 {
+    flex: 0 0 32%;
+    max-width: 32%;
+    margin-bottom: 20px;
+}
+
+/* Footer Main Background */
+.footerele {
+    display: flex;
+    flex-flow: column;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    color: aliceblue;
+}
+
+/* Footer Bottom Section */
+.container .credits a {
+    color: #598ce6;
+    text-decoration: none;
+}
+
+.container .credits a:hover {
+    color: #ff9f00;
+}
+
+.container .copyright {
+    margin-top: 1rem;
+}
+
+:root {
+    --first-color: none;
+    --second-color: none;
+}
+
+/* Card Container */
+div.card-container {
+    height: 300px;
+    width: 300px;
+    perspective: 1000px;
+    border: 2px solid var(--first-color);
+    margin: 0 25px;
+    display: inline-block;
+    /* Allows cards to appear side by side */
+    box-sizing: border-box;
+    vertical-align: top;
+    /* Ensures cards are aligned properly */
+}
+
+div.card-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 900ms linear 1ms;
+}
+
+div.card-front,
+div.card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+div.card-front {
+    background-color: var(--first-color);
+
+}
+
+div.card-back {
+    background-color: var(--second-color);
+    transform: rotateY(180deg);
+}
+
+div.card-front img,
+div.card-back img {
+    width: 100%;
+    height: 100%;
+}
+
+div.card-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.card-container:hover div.card-content {
+    transform: rotateY(180deg);
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+
+    /* Adjust the logo size for mobile */
+    .logo {
+        height: 50px;
+        width: 150px;
+    }
+
+    /* Adjust scene dimensions for mobile */
+    .scene {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust card face font size for mobile */
+    .card__face {
+        font-size: 16px;
+    }
+
+    /* Ensure images in the card face scale properly */
+    .card__face--front img {
+        height: auto;
+    }
+
+    /* Reduce social icon space for mobile */
+    .social-icons li {
+        margin: 0 10px;
+    }
+
+    /* Ensure footer aligns vertically */
+    .footerele {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Stack columns in footer */
+    .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Adjust card container to display 2 columns on small screens */
+    .card-container {
+        width: 45%;
+        /* Adjust for 2 columns layout */
+        margin: 10px;
+        /* Reduced margin for better spacing */
+    }
+
+    .mapp {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        margin: 2rem;
+        height: 1400px;
+    }
+
+    div.card-front {
+        margin-top: 5rem;
+    }
+
+    div.card-back {
+       margin-bottom: 2rem;
+    }
+
+    /* Layout for smaller mobile screens (below 640px) */
+    @media (max-width: 640px) {
+
+        /* Display cards in two columns */
+        .card-container {
+            width: 60px;
+            /* Make cards wider on small screens */
+            margin: 10px 0;
+            /* Adjust margins for smaller screen */
+        }
+
+        /* Tailwind-specific adjustments */
+        .hidden.md\:flex {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .container.mx-auto {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        /* Mobile-specific changes for columns */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
