@@ -1,0 +1,475 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: radial-gradient(circle 311px at 8.6% 27.9%, rgba(62, 147, 252, 0.57) 12.9%, rgba(239, 183, 192, 0.44) 91.2%);
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.logo {
+    margin-top: -1rem;
+    height: 60px;
+    width: 160px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.custom-orange {
+    color: #FC7F03;
+}
+
+.bg-custom-orange {
+    background-color: #FC7F03;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.review-scroll {
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Font Styles */
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+/* Styling for Address and Contact Sections */
+.address-section,
+.contact-section {
+    margin-bottom: 20px;
+}
+
+/* Logo Styling */
+.logo-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 2rem;
+}
+
+.social-icon-item a {
+    transition: color 0.3s ease;
+}
+
+.social-icon-item a:hover {
+    color: #598ce6;
+}
+
+.social-icons li a {
+    color: aliceblue;
+}
+
+.social-icons li a:hover {
+    color: #598ce6;
+}
+
+/* Footer Layout Styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-lg-4 {
+    flex: 0 0 32%;
+    max-width: 32%;
+    margin-bottom: 20px;
+}
+
+/* Footer Main Background */
+.footerele {
+    display: flex;
+    flex-flow: column;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    color: aliceblue;
+}
+
+/* Footer Bottom Section */
+.container .credits a {
+    color: #598ce6;
+    text-decoration: none;
+}
+
+.container .credits a:hover {
+    color: #ff9f00;
+}
+
+.container .copyright {
+    margin-top: 1rem;
+}
+
+.b1 {
+    position: relative;
+    height: 200px;
+    /* Set a fixed height for all containers */
+    width: 100%;
+    /* Make the width 100% of its parent container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.b2 {
+    position: relative;
+    height: 200px;
+    /* Set a fixed height for all containers */
+    width: 100%;
+    /* Make the width 100% of its parent container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg3.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.b3 {
+    position: relative;
+    height: 200px;
+    /* Set a fixed height for all containers */
+    width: 100%;
+    /* Make the width 100% of its parent container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg4.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.b4 {
+    position: relative;
+    height: 200px;
+    /* Set a fixed height for all containers */
+    width: 100%;
+    /* Make the width 100% of its parent container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.b5 {
+    position: relative;
+    height: 200px;
+    /* Set a fixed height for all containers */
+    width: 100%;
+    /* Make the width 100% of its parent container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.b6 {
+    position: relative;
+    height: 200px;
+    /* Set a fixed height for all containers */
+    width: 100%;
+    /* Make the width 100% of its parent container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.b7 {
+    position: relative;
+    height: 200px;
+    /* Set a fixed height for all containers */
+    width: 100%;
+    /* Make the width 100% of its parent container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b7::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.b8 {
+    position: relative;
+    height: 200px;
+    /* Set a fixed height for all containers */
+    width: 100%;
+    /* Make the width 100% of its parent container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b8::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.b9 {
+    position: relative;
+    height: 200px;
+    /* Set a fixed height for all containers */
+    width: 100%;
+    /* Make the width 100% of its parent container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b9::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.ourleadership {
+    background-color: rgba(218, 214, 214, 0.556);
+}
+
+.stats {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+:root {
+    --first-color: none;
+    --second-color: none;
+}
+
+div.card-container {
+    height: 200px;
+    width: 300px;
+    perspective: 1000px;
+    border: 2px solid var(--first-color);
+    float: left;
+    margin: 10px;
+    display: inline-block;
+}
+
+div.card-container div.card-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 900ms linear;
+}
+
+div.card-container div.card-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 300px;
+    backface-visibility: hidden;
+}
+
+div.card-container div.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+div.card-container div.card-front {
+    background-color: var(--first-color);
+}
+
+div.card-container div.card-back {
+    background-color: var(--second-color);
+    transform: rotateX(180deg);
+}
+
+div.card-container:hover div.card-content {
+    transform: rotateX(180deg);
+}
+
+div.card-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card-icon {
+        font-size: 35px;
+    }
+
+    .card h2 {
+        font-size: 1.6rem;
+    }
+
+    .footerele {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
